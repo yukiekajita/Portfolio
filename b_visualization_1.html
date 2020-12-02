@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Visualization by Yukie Kajita</title>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Stlesheet link -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <!-- Glyphicons Fontawesome link -->
+    <script src="https://kit.fontawesome.com/f11d2abb65.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div>
+    
+   <!-- Navigation Section -->
+   <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" style="background:rgb(238, 144, 37)" href="index.html">Home <i class="fas fa-home"></i></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="ml-auto navbar-nav">
+     <li class="nav-item dropdown">
+       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Analytics Project Examples <i class="far fa-chart-bar"></i>
+       </a>
+       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+         <a class="dropdown-item" href="b_visualization_1.html">Weather & Vacation Project</a>
+         <a class="dropdown-item" href="b_visualization_2.html">2</a>
+         <a class="dropdown-item" href="b_visualization_3.html">3</a>
+       </div>
+      </li>
+      <li class="nav-item active">
+        <a id = "first" class="nav-link" href="c_comparison.html">Publication  <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a id = "second" class="nav-link" href="d_cities.html">Resume/CV </a>
+      </li>
+    </ul>
+  </div>
+  </nav>
+    <br> 
+<!-- Main body structure -->   
+<div class="container">
+  <section class="row">
+      <div class="row justify-content-center">
+          <article class="description-content">
+            <br>
+            <h1>"What's the weather like as we approach the equator?"</h1>
+            <br>
+            <p style="margin-left: 40px; margin-right: 40px"> I created a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator.
+               I utilized a simple Python library and the OpenWeatherMap API to create a representative model of weather across world cities.
+               I created a series of scatter plots to showcase the following relationships:
+                Temperature (F) vs. Latitude, Humidity (%) vs. Latitude, Cloudiness (%) vs. Latitude, and Wind Speed (mph) vs. Latitude. 
+
+            <p style="margin-left: 40px; margin-right: 40px"> There was a strong correlation between maximum temperature and latitude. 
+              Low latitude regions had higher maximum temperature compared with high latitude regions (Fig. 1).
+              There were no correlations between latidude and humidity, cloudiness, and wind speed. 
+              These variables might be related with weather. 
+              Weather frequently changes anywhere in the world, either high or low latitude; therefore, there might not be a relationship between latitude and the other variables. 
+              I obtained similar statistic results and patterns on the maximum temperature and latitude relationships in the northern and southern hemispheres (Fig. 2, 3). 
+            </p>
+            <br>
+      <div class="container">        
+        <div class="row">
+          <div class="column2">
+            <div class="container2">
+              <img class="panel" src = "static/img/Temperature-Latitude.png" alt="Temp_Latitude_Graph">
+            </div> 
+          </div> 
+        <div class="column2">
+          <div class="container2">
+            <img class="panel" src="static/img/Max Temp-Latitude-N-Hemisphere.png" alt="Latitude vs Temperature"></a>
+          </div> 
+        </div> 
+        <div class="column2">
+          <div class="container2">
+            <img class="panel" src="static/img/Max Temp-Latitude-S-Hemisphere.png" alt="Latitude vs Humidity"></a>
+          </div> 
+        </div> 
+         <br>
+        </div><!--closing row-->
+      </div> <!---closing container-->
+      <div class="container">
+        <section class="row">
+            <div class="row justify-content-center">
+                <article class="description-content">
+                  <br>
+                  <h1>"My ideal weather condition & Nearby hotel information"</h1>
+                  <br>
+                  <p style="margin-left: 40px; margin-right: 40px"> I used gmaps and created a heat map weighed the humidity for every city from the above analyses. 
+                    I narrowed down the dataframe with the cities having maximum temperature >65F, <85F, humidity <55%, and wind speed <10mph.
+                    Using Google Places API, I looped through the all cities to find a hotel located within 5000 meters of each city coordinate.
+                    I added marker to show the name of the hotel, city, and country on the map.</p>
+      
+      <div class="container">        
+        <div class="row">
+          <div class="column3">
+            <div class="container3">
+              <img class="map" src="static/img/humidity_map.png" alt="humidity_map"></a>
+            </div>
+          </div> 
+                <div class="column3">
+                  <div class="container3">
+              <img class="map" src="static/img/hotel_map.png" alt="hotel_map"></a>
+              <br>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!--colsing row-->
+  </div>
+  <div class="container">        
+    
+      <h1 style="font-size: 18px;"> ** Data Files and More Information Available @
+      <a href="https://github.com/yukiekajita/Climate-Map-API-Project"> 
+        GitHub:Climate-Map-Project **</a></h1>
+      </div> <!--colsing row-->
+    </div>
+    <div class="container">        
+      <hr style="width; 5px">
+      <h1 style="font-size: 18px;">Copyright © 2020 Yukie Kajita</h1>
+      <br>
+    <!-- JS Function for Bootstraps -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>    
+</body>
+
+
+</html>

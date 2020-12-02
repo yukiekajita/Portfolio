@@ -1,0 +1,163 @@
+body {
+    background-color: rgb(6, 119, 139);
+}
+
+h1 {
+    font-size: 25px;
+    font-family: -apple-system,BlinkMacSystemFont;
+    color: rgb(12, 12, 124);
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: -apple-system,BlinkMacSystemFont;
+    color: rgb(12, 12, 124);
+    font-weight: bold;
+    text-align: left;
+    margin: 0px 0px 15px;
+}
+
+h3 {
+    font-size: 15px;
+    font-family: -apple-system,BlinkMacSystemFont;
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+
+.navbar-brand, .nav > li > a {
+    padding: 15px;
+    font-size: 20px;
+}
+
+.navbar-light .navbar-brand {
+    color: white;
+}
+
+.navbar a {
+    color:gray;
+  }
+
+.container {
+    
+    background-color: white;
+}
+
+#box_1 {
+    background-color: white; 
+}
+
+/* Box Class */
+.box {
+    margin-top: 60px; 
+    margin-bottom: 62px; 
+    padding: 20px 20px 25px;
+    color:white;
+    background-color: white; 
+}
+
+/* Images */
+img{
+    width:100% !important;
+    height:100% !important;
+    position: center;
+    cursor: pointer;
+}
+.panel:active, .panel:focus, .panel:hover {
+    border-color: rgb(76, 47, 209);
+    border-style: solid;
+}
+
+#my-image {
+    width:30% !important;
+    height:30% !important;
+    float: left;
+    padding: 0px 20px 20px 25px;
+}
+
+#first, #second {
+    color:gray;
+}
+
+.nav-link:hover{
+    background-color:rgb(238, 184, 36) !important;
+   }
+
+.table {
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    text-align: right;
+}
+
+.col-md-12, .col-sm-12 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+@media (min-width: 434px){
+    .navbar.bg-light {
+    background-color: #7fdfe8 !important;
+}
+}
+
+@media (max-width: 768px){
+    .navbar.bg-light {
+    background-color:rgb(238, 144, 37) !important;
+}
+}
+
+.btn:focus, .btn:active {
+    border: navy solid !important;
+}
+
+.fa-github:hover {
+    color: rgb(231, 163, 17);
+  }
+
+  .fa-linkedin-square:hover {
+    color: rgb(231, 163, 17);
+  }
+
+  .fa-envelope:hover {
+    color: rgb(231, 163, 17);
+  }
+
+  .fa-file-pdf:hover {
+    color: rgb(231, 163, 17);
+  }
+
+  .column2 {
+    float: center;
+    width: 33.3%;
+  }
+
+  p {
+    font-size: 15px;
+    font-family: -apple-system,BlinkMacSystemFont;
+    margin: 15px 0px 15px;
+  }
+
+  li {
+    font-size: 15px;
+    font-family: -apple-system,BlinkMacSystemFont;
+  }
+  .column3 {
+    float: center;
+    width: 48%;
+    
+    margin: 10px;
+  }
+
+hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
