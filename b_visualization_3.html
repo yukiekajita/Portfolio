@@ -30,7 +30,7 @@
        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
          <a class="dropdown-item" href="b_visualization_1.html">Python-API Weather & Vacation Project</a>
          <a class="dropdown-item" href="b_visualization_2.html">D3.js Census Data Project</a>
-         <a class="dropdown-item" href="b_visualization_3.html">3</a>
+         <a class="dropdown-item" href="b_visualization_3.html">Tableau: Citi Bike Data Analyses Project</a>
        </div>
       </li>
       <li class="nav-item active">
@@ -43,57 +43,59 @@
   </div>
   </nav>
     <br> 
-
-    <!-- Main body structure -->   
-    <div class="container">
-        <div class="row">
-        <!-- Left box setting up -->
-        <div class="col-md-7 col-sm-12">
-            <div id="box_1" class="box">
-                <h1 class = "title">Cloudiness</h1>
-                <hr>
-                <img src = "Resources/assets/images/Fig3.png" alt="Latitude vs Cloudiness">
-                <p> The graph shows a relationship between latitude and cloudiness.
-                  Based on the graph, it is unlikely that there is a relationship between the two variables.
-                  Cloudiness would be varibale with weather. Weather frequently changes anywhere in the world, either high or low latitude; 
-                  therefore, we would not see a relationship between latitude and cloudiness.</p>
-
-            </div><!--closing box_1-->
-        </div> <!---closing col-->
-     
-
-        <!-- Right box setting up -->
-        <div class="col-md-5 col-sm-12">
-            <div class="box">
-                <h2 class = "title">Visualizations</h2>
-                <hr>
-
-                <div class="row" style="padding-bottom: 30px;">
-                    <div class="col-md-6 col-sm-3">
-                        <a href="b_visualization_1.html"><img class="panel" src="Resources/assets/images/Fig1.png" alt="Latitude vs Temperature"></a>
-                    </div>
-                    <div class="col-md-6 col-sm-3">
-                    <a href="b_visualization_2.html"><img class="panel" src="Resources/assets/images/Fig2.png" alt="Latitude vs Humidity"></a>
-                    </div>
-                    <div class="col-md-6 col-sm-3">
-                        <a href="b_visualization_3.html"><img class="panel" src="Resources/assets/images/Fig3.png" alt="Latitude vs Cloudiness"></a>
-                    </div>
-                    <div class="col-md-6 col-sm-3">
-                        <a href="b_visualization_4.html"><img class="panel" src="Resources/assets/images/Fig4.png" alt="Latitude vs Wind Speed"></a>
-                    </div>
-                    <div class="col-md-6 col-sm-3">
-                      <a href="b_visualization_5.html"><img class="panel" src="Resources/assets/images/Fig5.png" alt="N Hemisphere Latitude vs Temperature"></a>  
-                    </div>
-                    <div class="col-md-6 col-sm-3">
-                          <a href="b_visualization_6.html"><img class="panel" src="Resources/assets/images/Fig6.png" alt="S Hemisphere Latitude vs Temperature"></a>
-                    </div>
-                </div>
-            </div>
+    <div class="container" style='position: center'>   
+      <div class="row" style="padding-bottom: 10px; padding-top: 10px">
+        <div class="col-md-12" style='position: center'>
+          <h1>Citi Bike Data Analyses</h1>
         </div>
-    </div> <!--colsing row-->
-  </div>
+    </div>
+    <div class="row" style='position: center'>
+        <div class="col-md-12" style="position: center">
+          <p>I downloaded four csv files from www.citibikenyc.com/system-data. 
+            These csv files were months of January, February, July and August data files collected in 2019. 
+            I selected those months to make a seasonal category for the data analyses. 
+            For example, I used January and February data files for winter, and July and August data files for summer. 
+            First, those csv files were imported to Jupyter Notebook. Using Pandas, I merged those files to one csv file. 
+            I created a new column named ‘Season’, and put ‘summer’ for July and August data frames and ‘winter’ for January and February data frames. And then, I imported the merged csv file to Tableau.
+          </p>
 
-  <div class="container">        
+          <p>
+            I made a story in Tableau Public to show some data analyses with the Citi Bike dataset. 
+            You can change seasonal categoroes, Winter vs Summer, and click each white box below to explore the Tableau Story!
+          </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12" style="padding-bottom: 10px; padding-left: 62px; position: relative">
+          <div class='tableauPlaceholder' id='viz1607026515907'>
+            <noscript>
+              <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ci&#47;City_Bike_Project&#47;Story1&#47;1_rss.png' style='border: none' /></a>
+            </noscript>
+            <object class='tableauViz'  style='display:none;'>
+              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+              <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
+              <param name='name' value='City_Bike_Project&#47;Story1' />
+              <param name='tabs' value='no' />
+              <param name='toolbar' value='yes' />
+              <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ci&#47;City_Bike_Project&#47;Story1&#47;1.png' />
+              <param name='animate_transition' value='yes' />
+              <param name='display_static_image' value='yes' />
+              <param name='display_spinner' value='yes' />
+              <param name='display_overlay' value='yes' />
+              <param name='display_count' value='yes' />
+              <param name='language' value='en' />
+            </object>
+          </div>    
+          <script type='text/javascript'>                    
+            var divElement = document.getElementById('viz1607026515907');                    
+            var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width='1016px';vizElement.style.height='991px';                    
+            var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+          </script>
+                 
+<br>
+  <div class="container">      
+      <h1 style="font-size: 18px;"> ** Data Files and More Information Available @
+        <a href="https://public.tableau.com/profile/yukie.kajita#!/vizhome/City_Bike_Project/Story1"> Tableau-CitiBike-Project </a>**</h1>  
     <hr style="width; 5px">
     <h1 style="font-size: 18px;">Copyright © 2020 Yukie Kajita</h1>
   </div>

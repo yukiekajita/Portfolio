@@ -103,15 +103,6 @@ img{
     text-align: right;
 }
 
-.col-md-12, .col-sm-12 {
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    padding-bottom: 15px;
-    padding-top: 15px;
-}
-
 @media (min-width: 434px){
     .navbar.bg-light {
     background-color: #7fdfe8 !important;
@@ -173,3 +164,4 @@ hr {
     color: #333; /* old IE */
     background-color: #333; /* Modern Browsers */
 }
+
