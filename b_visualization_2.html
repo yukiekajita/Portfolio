@@ -28,8 +28,8 @@
          Analytics Project Examples <i class="far fa-chart-bar"></i>
        </a>
        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-         <a class="dropdown-item" href="b_visualization_1.html">Weather & Vacation Project</a>
-         <a class="dropdown-item" href="b_visualization_2.html">2</a>
+         <a class="dropdown-item" href="b_visualization_1.html">Python-API Weather & Vacation Project</a>
+         <a class="dropdown-item" href="b_visualization_2.html">D3.js Census Data Project</a>
          <a class="dropdown-item" href="b_visualization_3.html">3</a>
        </div>
       </li>
@@ -43,61 +43,52 @@
   </div>
   </nav>
     <br> 
+<!-- Main body structure -->   
+<div class="container">
+  
+  <section class="row">
+    
+      <div class="row justify-content-center">
+          <article class="description-content">
+            <br>
+            
+            <h1>Data Journalism Project with Census data and D3 graphics</h1>
+            <p style="margin-left: 40px; margin-right: 40px"> Using the D3 techniques, I created a scatter plot that represented each state with circle elements. 
+              I imported 2014 Census data, data.csv, by using the d3.csv function. 
+              I included state abbreviations in the circles with "selectAll.("null")" function in Javascript, and appended the text to the circles. 
+              I used the rate of poverty, median income, and median age as x variables, and the rate of lacks healthcare, obesity, and smoking rate as y variables.
+              Also, I incorporated d3-tip to reveal a specific element's data.
+              I added tooltips to all circles and displayed each tooltip with the data.
+            </p>
+            <div class="column">
+              <div class="container3">
+               <img id= "web-image" src="static/img/Webscreen.gif" alt="gif">
+            
+                <h2 style="margin-left: 40px; margin-right: 40px">1) Correlations Discovered Between Lacks of Healthcare and Poverty, Age, and Income</h2>
+                 <p style="margin-left: 40px; margin-right: 40px"> There was a strong, positive correlation between lacks of healthcare and the poverty rate (R=0.52). Additionally, 
+                   moderate, negative correlations were observed between lacks of health care and median age (R=-0.38), and the household income (R=-0.43) in states.</p>
+          
+                <h2 style="margin-left: 40px; margin-right: 40px">2) Correlations Discovered Between Obesity, and Poverty and Income</h2>
+                 <p style="margin-left: 40px; margin-right: 40px">There was a positive correlation between the rate of obesity and the rate of poverty (R=0.46).
+                   A strong, negative correlation was found between the rate of obesity and the median household income (R=-0.43), but not between
+                  the rate of obesity and median age (R=-0.007).</p>
 
-    <!-- Main body structure -->   
-    <div class="container">
-    <div class="row">
-      <!-- Left box setting up -->
-      <div class="col-md-7 col-sm-12">
-        <div id="box_1" class="box">
-          <h1 class = "title">Humidity</h1>
-          <hr>
-          <img src = "Resources/assets/images/Fig2.png" alt="Latitude vs Humidity">
-          <p> The graph shows a relationship between latitude and humidity. 
-            Based on the graph, it is unlikely that there is a relationship between the two variables.
-            Humidity would be varibale with any weather related factors (ex, rainfall, wind, sunshine). Also, weather frequently changes anywhere in the world, either high or low latitude; 
-            therefore, we would not see a relationship between latitude and humidity. </p>
+                <h2 style="margin-left: 40px; margin-right: 40px">3) Correlations Discovered Between Smoking Rate and Poverty, Age, and Income</h2>
+                 <p style="margin-left: 40px; margin-right: 40px"> There was a strong, positive correlation between the rate of smoking and the rate of poverty (R=0.52) and the median age (R=0.25). A strong, negative 
+                   correlation was observed between the rate of smoking and household income (R=-0.66)</p></div>
+              </div>
+            </div>
 
-        </div><!--closing box_1-->
-      </div> <!---closing col-->
-     
-
-      <!-- Right box setting up -->
-      <div class="col-md-5 col-sm-12">
-        <div class="box">
-          <h2 class = "title">Visualizations</h2>
-          <hr>
-
-          <div class="row" style="padding-bottom: 30px;">
-            <div class="col-md-6 col-sm-3">
-              <a href="b_visualization_1.html"><img class="panel" src="Resources/assets/images/Fig1.png" alt="Latitude vs Temperature"></a>
-            </div>
-            <div class="col-md-6 col-sm-3">
-              <a href="b_visualization_2.html"><img class="panel" src="Resources/assets/images/Fig2.png" alt="Latitude vs Humidity"></a>
-            </div>
-            <div class="col-md-6 col-sm-3">
-              <a href="b_visualization_3.html"><img class="panel" src="Resources/assets/images/Fig3.png" alt="Latitude vs Cloudiness"></a>
-            </div>
-            <div class="col-md-6 col-sm-3">
-              <a href="b_visualization_4.html"><img class="panel" src="Resources/assets/images/Fig4.png" alt="Latitude vs Wind Speed"></a>
-            </div>
-            <div class="col-md-6 col-sm-3">
-              <a href="b_visualization_5.html"><img class="panel" src="Resources/assets/images/Fig5.png" alt="N Hemisphere Latitude vs Temperature"></a>  
-            </div>
-            <div class="col-md-6 col-sm-3">
-                  <a href="b_visualization_6.html"><img class="panel" src="Resources/assets/images/Fig6.png" alt="S Hemisphere Latitude vs Temperature"></a>
-            </div>
-          </div>
-        </div>
       </div>
-    </div> <!--colsing row-->
-  </div>
-  <div class="container">        
+<div class="container">
+  <h1 style="font-size: 18px;"> ** Data Files and More Information Available @
+    <a href="https://github.com/yukiekajita/D3.js-Census-Data-Project"> GitHub:D3.js-Census-Data-Project </a>**</h1>
+  
     <hr style="width; 5px">
     <h1 style="font-size: 18px;">Copyright © 2020 Yukie Kajita</h1>
-  </div>
+  
     <br>
-
+</div>
 
     <!-- JS Function for Bootstraps -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
