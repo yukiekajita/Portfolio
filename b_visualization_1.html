@@ -25,7 +25,7 @@
     <ul class="ml-auto navbar-nav">
      <li class="nav-item dropdown">
        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         Analytics Project Examples <i class="far fa-chart-bar"></i>
+         Analytic Bootcamp Projects <i class="far fa-chart-bar"></i>
        </a>
        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
          <a class="dropdown-item" href="b_visualization_1.html">Python-API Weather & Vacation Project</a>
@@ -34,10 +34,10 @@
        </div>
       </li>
       <li class="nav-item active">
-        <a id = "first" class="nav-link" href="c_comparison.html">Publication  <span class="sr-only">(current)</span></a>
+        <a id = "first" class="nav-link" href="c_publications.html">Publication  <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a id = "second" class="nav-link" href="d_cities.html">Resume/CV </a>
+        <a id = "second" class="nav-link" href="d_resume.html">Resume/CV </a>
       </li>
     </ul>
   </div>
@@ -53,15 +53,16 @@
             <br>
             <p style="margin-left: 40px; margin-right: 40px"> I created a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator.
                I utilized a simple Python library and the OpenWeatherMap API to create a representative model of weather across world cities.
-               I created a series of scatter plots to showcase the following relationships:
-                Temperature (F) vs. Latitude, Humidity (%) vs. Latitude, Cloudiness (%) vs. Latitude, and Wind Speed (mph) vs. Latitude. 
+               I created a series of scatter plots to show the following relationships:
+               Temperature (F) vs. Latitude, Humidity (%) vs. Latitude, Cloudiness (%) vs. Latitude, and Wind Speed (mph) vs. Latitude. </p>
 
             <p style="margin-left: 40px; margin-right: 40px"> There was a strong correlation between maximum temperature and latitude. 
               Low latitude regions had higher maximum temperature compared with high latitude regions (Fig. 1).
-              There were no correlations between latidude and humidity, cloudiness, and wind speed. 
+              There were no correlations between latitude and humidity, cloudiness, and wind speed. 
               These variables might be related with weather. 
               Weather frequently changes anywhere in the world, either high or low latitude; therefore, there might not be a relationship between latitude and the other variables. 
-              I obtained similar statistic results and patterns on the maximum temperature and latitude relationships in the northern and southern hemispheres (Fig. 2, 3). 
+              I create a dataset for the northern and the southern hemispheres to examine the relationship between the maximum temperature and latitude.
+              There was a negative relationship between the maximum temperature and latitude in the northern hemisphere, but there was a positive relationship between the maximum temperature and latitude in the sourthern hemisphere (Fig. 2, 3). 
             </p>
             <br>
       <div class="container">        
@@ -91,10 +92,10 @@
                   <br>
                   <h1>"My ideal weather condition & Nearby hotel information"</h1>
                   <br>
-                  <p style="margin-left: 40px; margin-right: 40px"> I used gmaps and created a heat map weighed the humidity for every city from the above analyses. 
-                    I narrowed down the dataframe with the cities having maximum temperature >65F, <85F, humidity <55%, and wind speed <10mph.
-                    Using Google Places API, I looped through the all cities to find a hotel located within 5000 meters of each city coordinate.
-                    I added marker to show the name of the hotel, city, and country on the map.</p>
+                  <p style="margin-left: 40px; margin-right: 40px"> I used gmaps to create a heat map that weighed the humidity for every city in the world. 
+                    To create my favorite weather condition, I set up the dataframe with the cities having maximum temperature with >65F, <85F, humidity with <55%, and wind speed with <10mph.
+                    Using Google Places API, I looped through all cities in the dataset to find out a hotel that was located within 5 km of each city coordinate.
+                    I added a marker on the map to show the hotel, city, and country informatio.</p>
       
       <div class="container">        
         <div class="row">
@@ -122,8 +123,8 @@
       </div> <!--colsing row-->
     </div>
     <div class="container">        
-      <hr style="width; 5px">
-      <h1 style="font-size: 18px;">Copyright © 2020 Yukie Kajita</h1>
+      <hr style="width 5px">
+      <h1 style="font-size: 18px">Copyright © 2020 Yukie Kajita</h1>
       <br>
     <!-- JS Function for Bootstraps -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
